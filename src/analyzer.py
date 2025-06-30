@@ -1,8 +1,10 @@
-# analyzer.py
+# src/analyzer.py
+
+import pandas as pd  # ✅ This line is required
 from collections import Counter
 
 class Analyzer:
-    def __init__(self, df: pd.DataFrame):
+    def init__(self, df: pd.DataFrame):  # Note: use __init, not init
         self.df = df
 
     def summarize_chat(self, chat_df: pd.DataFrame) -> dict:
